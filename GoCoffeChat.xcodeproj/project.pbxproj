@@ -7,25 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6707FD928ACE42E0000AD9A /* InDevelopingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */; };
+		E6738ED428A5550600E48634 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6738ED328A5550600E48634 /* PostCell.swift */; };
+		E679340228A54C6D006D1F87 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679340128A54C6D006D1F87 /* Post.swift */; };
+		E67ACB28289FE89D001F232F /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ACB27289FE89D001F232F /* NewPostViewController.swift */; };
 		E67BA730288661C100582DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA72F288661C100582DEF /* AppDelegate.swift */; };
 		E67BA732288661C100582DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA731288661C100582DEF /* SceneDelegate.swift */; };
-		E67BA734288661C100582DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA733288661C100582DEF /* ViewController.swift */; };
+		E67BA734288661C100582DEF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA733288661C100582DEF /* StartViewController.swift */; };
 		E67BA737288661C100582DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67BA735288661C100582DEF /* Main.storyboard */; };
 		E67BA73A288661C100582DEF /* GoCoffeChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E67BA738288661C100582DEF /* GoCoffeChat.xcdatamodeld */; };
 		E67BA73C288661C300582DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67BA73B288661C300582DEF /* Assets.xcassets */; };
 		E67BA73F288661C300582DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67BA73D288661C300582DEF /* LaunchScreen.storyboard */; };
+		E67BA7482886A5B000582DEF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA7472886A5B000582DEF /* SignUpViewController.swift */; };
+		E67BA74A2887904000582DEF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA7492887904000582DEF /* SignInViewController.swift */; };
+		E67BA74C2887AFD100582DEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E67BA74B2887AFD100582DEF /* GoogleService-Info.plist */; };
+		E67BA74F2887BA3500582DEF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E67BA74E2887BA3500582DEF /* FirebaseAnalytics */; };
+		E67BA7512887BA3500582DEF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E67BA7502887BA3500582DEF /* FirebaseAuth */; };
+		E67BA7532887BA3500582DEF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E67BA7522887BA3500582DEF /* FirebaseDatabase */; };
+		E67BA7552887BA3500582DEF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E67BA7542887BA3500582DEF /* FirebaseMessaging */; };
+		E67BA7572887BA3500582DEF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = E67BA7562887BA3500582DEF /* FirebaseStorage */; };
+		E67BA759288A352500582DEF /* TBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA758288A352500582DEF /* TBViewController.swift */; };
+		E67BA75C288AAB9D00582DEF /* PostsPoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA75B288AAB9D00582DEF /* PostsPoolViewController.swift */; };
+		E67BA75E288D058900582DEF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA75D288D058900582DEF /* ProfileViewController.swift */; };
+		E67BA760288D511600582DEF /* PoolChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA75F288D511600582DEF /* PoolChatsViewController.swift */; };
+		E67BA762288D77AF00582DEF /* NewChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA761288D77AF00582DEF /* NewChatViewController.swift */; };
+		E67BA764288D8EA400582DEF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA763288D8EA400582DEF /* User.swift */; };
+		E67BA766288DAFB500582DEF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA765288DAFB500582DEF /* ChatViewController.swift */; };
+		E67BA768288DE48A00582DEF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA767288DE48A00582DEF /* Message.swift */; };
+		E67BA76B288DEB9400582DEF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA76A288DEB9400582DEF /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InDevelopingScreenViewController.swift; sourceTree = "<group>"; };
+		E6738ED328A5550600E48634 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		E679340128A54C6D006D1F87 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E67ACB27289FE89D001F232F /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		E67BA72C288661C100582DEF /* GoCoffeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoCoffeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67BA72F288661C100582DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E67BA731288661C100582DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E67BA733288661C100582DEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E67BA733288661C100582DEF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		E67BA736288661C100582DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E67BA739288661C100582DEF /* GoCoffeChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoCoffeChat.xcdatamodel; sourceTree = "<group>"; };
 		E67BA73B288661C300582DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67BA73E288661C300582DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E67BA740288661C300582DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67BA7472886A5B000582DEF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E67BA7492887904000582DEF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E67BA74B2887AFD100582DEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E67BA758288A352500582DEF /* TBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBViewController.swift; sourceTree = "<group>"; };
+		E67BA75B288AAB9D00582DEF /* PostsPoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsPoolViewController.swift; sourceTree = "<group>"; };
+		E67BA75D288D058900582DEF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E67BA75F288D511600582DEF /* PoolChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolChatsViewController.swift; sourceTree = "<group>"; };
+		E67BA761288D77AF00582DEF /* NewChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChatViewController.swift; sourceTree = "<group>"; };
+		E67BA763288D8EA400582DEF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E67BA765288DAFB500582DEF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E67BA767288DE48A00582DEF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E67BA76A288DEB9400582DEF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +70,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67BA7552887BA3500582DEF /* FirebaseMessaging in Frameworks */,
+				E67BA7532887BA3500582DEF /* FirebaseDatabase in Frameworks */,
+				E67BA74F2887BA3500582DEF /* FirebaseAnalytics in Frameworks */,
+				E67BA7572887BA3500582DEF /* FirebaseStorage in Frameworks */,
+				E67BA7512887BA3500582DEF /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E67ACB29289FE8AE001F232F /* Pool Posts */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA75B288AAB9D00582DEF /* PostsPoolViewController.swift */,
+				E67ACB27289FE89D001F232F /* NewPostViewController.swift */,
+				E6738ED328A5550600E48634 /* PostCell.swift */,
+			);
+			path = "Pool Posts";
+			sourceTree = "<group>";
+		};
 		E67BA723288661C100582DEF = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +110,62 @@
 		E67BA72E288661C100582DEF /* GoCoffeChat */ = {
 			isa = PBXGroup;
 			children = (
+				E67BA75A288AAB6200582DEF /* MainScreens */,
+				E67BA7462886A53100582DEF /* AuthorizationScreens */,
 				E67BA72F288661C100582DEF /* AppDelegate.swift */,
 				E67BA731288661C100582DEF /* SceneDelegate.swift */,
-				E67BA733288661C100582DEF /* ViewController.swift */,
 				E67BA735288661C100582DEF /* Main.storyboard */,
 				E67BA73B288661C300582DEF /* Assets.xcassets */,
 				E67BA73D288661C300582DEF /* LaunchScreen.storyboard */,
 				E67BA740288661C300582DEF /* Info.plist */,
 				E67BA738288661C100582DEF /* GoCoffeChat.xcdatamodeld */,
+				E67BA74B2887AFD100582DEF /* GoogleService-Info.plist */,
 			);
 			path = GoCoffeChat;
+			sourceTree = "<group>";
+		};
+		E67BA7462886A53100582DEF /* AuthorizationScreens */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA7472886A5B000582DEF /* SignUpViewController.swift */,
+				E67BA7492887904000582DEF /* SignInViewController.swift */,
+				E67BA733288661C100582DEF /* StartViewController.swift */,
+			);
+			path = AuthorizationScreens;
+			sourceTree = "<group>";
+		};
+		E67BA75A288AAB6200582DEF /* MainScreens */ = {
+			isa = PBXGroup;
+			children = (
+				E67ACB29289FE8AE001F232F /* Pool Posts */,
+				E67BA76C288DEBDF00582DEF /* Model */,
+				E67BA769288DEB7300582DEF /* Pool Chats */,
+				E67BA758288A352500582DEF /* TBViewController.swift */,
+				E67BA75D288D058900582DEF /* ProfileViewController.swift */,
+				E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */,
+			);
+			path = MainScreens;
+			sourceTree = "<group>";
+		};
+		E67BA769288DEB7300582DEF /* Pool Chats */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA761288D77AF00582DEF /* NewChatViewController.swift */,
+				E67BA75F288D511600582DEF /* PoolChatsViewController.swift */,
+				E67BA76A288DEB9400582DEF /* UserCell.swift */,
+				E67BA765288DAFB500582DEF /* ChatViewController.swift */,
+			);
+			path = "Pool Chats";
+			sourceTree = "<group>";
+		};
+		E67BA76C288DEBDF00582DEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA767288DE48A00582DEF /* Message.swift */,
+				E67BA763288D8EA400582DEF /* User.swift */,
+				E679340128A54C6D006D1F87 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +184,13 @@
 			dependencies = (
 			);
 			name = GoCoffeChat;
+			packageProductDependencies = (
+				E67BA74E2887BA3500582DEF /* FirebaseAnalytics */,
+				E67BA7502887BA3500582DEF /* FirebaseAuth */,
+				E67BA7522887BA3500582DEF /* FirebaseDatabase */,
+				E67BA7542887BA3500582DEF /* FirebaseMessaging */,
+				E67BA7562887BA3500582DEF /* FirebaseStorage */,
+			);
 			productName = GoCoffeChat;
 			productReference = E67BA72C288661C100582DEF /* GoCoffeChat.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +219,9 @@
 				Base,
 			);
 			mainGroup = E67BA723288661C100582DEF;
+			packageReferences = (
+				E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E67BA72D288661C100582DEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E67BA73F288661C300582DEF /* LaunchScreen.storyboard in Resources */,
+				E67BA74C2887AFD100582DEF /* GoogleService-Info.plist in Resources */,
 				E67BA73C288661C300582DEF /* Assets.xcassets in Resources */,
 				E67BA737288661C100582DEF /* Main.storyboard in Resources */,
 			);
@@ -141,10 +250,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E67BA734288661C100582DEF /* ViewController.swift in Sources */,
+				E67BA759288A352500582DEF /* TBViewController.swift in Sources */,
+				E67BA734288661C100582DEF /* StartViewController.swift in Sources */,
+				E67BA75C288AAB9D00582DEF /* PostsPoolViewController.swift in Sources */,
 				E67BA73A288661C100582DEF /* GoCoffeChat.xcdatamodeld in Sources */,
+				E679340228A54C6D006D1F87 /* Post.swift in Sources */,
+				E6738ED428A5550600E48634 /* PostCell.swift in Sources */,
+				E6707FD928ACE42E0000AD9A /* InDevelopingScreenViewController.swift in Sources */,
+				E67BA74A2887904000582DEF /* SignInViewController.swift in Sources */,
+				E67ACB28289FE89D001F232F /* NewPostViewController.swift in Sources */,
 				E67BA730288661C100582DEF /* AppDelegate.swift in Sources */,
 				E67BA732288661C100582DEF /* SceneDelegate.swift in Sources */,
+				E67BA762288D77AF00582DEF /* NewChatViewController.swift in Sources */,
+				E67BA764288D8EA400582DEF /* User.swift in Sources */,
+				E67BA76B288DEB9400582DEF /* UserCell.swift in Sources */,
+				E67BA766288DAFB500582DEF /* ChatViewController.swift in Sources */,
+				E67BA7482886A5B000582DEF /* SignUpViewController.swift in Sources */,
+				E67BA760288D511600582DEF /* PoolChatsViewController.swift in Sources */,
+				E67BA75E288D058900582DEF /* ProfileViewController.swift in Sources */,
+				E67BA768288DE48A00582DEF /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +488,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E67BA74E2887BA3500582DEF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E67BA7502887BA3500582DEF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E67BA7522887BA3500582DEF /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E67BA7542887BA3500582DEF /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		E67BA7562887BA3500582DEF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67BA74D2887BA3500582DEF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E67BA738288661C100582DEF /* GoCoffeChat.xcdatamodeld */ = {

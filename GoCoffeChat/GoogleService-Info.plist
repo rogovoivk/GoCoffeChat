@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>832234284324-qisvjas04e2objdka9v5uvthdeod99gj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.832234284324-qisvjas04e2objdka9v5uvthdeod99gj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDRG9rz4JkQPjnoezFwAEL0CLBhjfuL5no</string>
+	<key>GCM_SENDER_ID</key>
+	<string>832234284324</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.VladRogovoii.GoCoffeChat</string>
+	<key>PROJECT_ID</key>
+	<string>gosth-ef99e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gosth-ef99e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:832234284324:ios:256ddb0173283ca4557fb1</string>
+</dict>
+</plist>
