@@ -12,11 +12,13 @@ import Firebase
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
+//    var window: UIWindow?
+//    let rootWireframe = RootWireframe()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         return true
+//        self.rootWireframe.application(didFinishLaunchingWithOptions: launchOptions, window: self.window!)
     }
 
     

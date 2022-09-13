@@ -1,19 +1,21 @@
 //
-//  PoolPostsViewController.swift
+//  PoolPostsView.swift
 //  GoCoffeChat
 //
-//  Created by Vladoslav on 22.07.2022.
+//  Created by Vladoslav on 12.09.2022.
 //
 
 import UIKit
-import Firebase
 
-class PostsPoolViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
-
+class PoolPostsView: UIView, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    var screenView: UIView?
+    var postsPoolViewController: PostsPoolViewController?
+    
     private var bgImage = UIImageView(image: UIImage(named: "backScreen"))
     
     let cellId = "PostCell"
-    private var posts = [Post]()
+    public var posts = [Post]()
     
     private let newPostButton: UIButton = {
         let button = UIButton()
@@ -28,34 +30,25 @@ class PostsPoolViewController: UIViewController, UITextFieldDelegate, UITableVie
     private let newPostButtonSize: CGFloat = 50
     
     @objc func handleNewPost(){
-        
-        let newPostController = NewPostViewController()
-//        newChatController.poolChats = self
-        let vc = UINavigationController(rootViewController: newPostController)
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true, completion: nil)
+//        navigation?.presentNewPostViewControllerInWindow()
     }
     
     
-    private let tableView: UITableView = {
+    public let tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func setView() {
         bgImage.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bgImage)
+        screenView!.addSubview(bgImage)
         let bgBlur = UIBlurEffect(style: UIBlurEffect.Style.systemUltraThinMaterialDark)
         let blurEffectView = UIVisualEffectView(effect: bgBlur)
-        blurEffectView.frame = view.bounds
+        blurEffectView.frame = screenView!.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(blurEffectView)
-        
-        navigationController?.title = "Posts Pool"
-        print("open screen Posts Pool")
+        screenView!.addSubview(blurEffectView)
         
         addSubviews()
         layoutViews()
@@ -71,42 +64,31 @@ class PostsPoolViewController: UIViewController, UITextFieldDelegate, UITableVie
         tableView.backgroundColor = .clear
         
         
-        view.addSubview(tableView)
-        view.addSubview(newPostButton)
+        screenView!.addSubview(tableView)
+        screenView!.addSubview(newPostButton)
     }
     
     func layoutViews() {
         newPostButton.layer.cornerRadius = newPostButtonSize/2
         
         NSLayoutConstraint.activate([
-            newPostButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
-            newPostButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
+            newPostButton.bottomAnchor.constraint(equalTo: screenView!.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+            newPostButton.trailingAnchor.constraint(equalTo: screenView!.safeAreaLayoutGuide.trailingAnchor, constant: -20),
             newPostButton.heightAnchor.constraint(equalToConstant: newPostButtonSize),
             newPostButton.widthAnchor.constraint(equalToConstant: newPostButtonSize),
             
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            tableView.topAnchor.constraint(equalTo: screenView!.safeAreaLayoutGuide.topAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: screenView!.safeAreaLayoutGuide.bottomAnchor, constant: 0),
+            tableView.leadingAnchor.constraint(equalTo: screenView!.leadingAnchor, constant: 10),
+            tableView.trailingAnchor.constraint(equalTo: screenView!.trailingAnchor, constant: -10),
             
 
         ])
     }
     
     func observePosts() {
-        let ref = Database.database().reference().child("posts")
-        ref.observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject]{
-                let post = Post(dictionary: dictionary)
-//                user.id = snapshot.key
-
-                self.posts.append(post)
-                
-                DispatchQueue.main.async(execute: {
-                    self.tableView.reloadData()
-                })
-            }
-        }, withCancel: nil)
+        postsPoolViewController?.interactor.observePosts()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -150,6 +132,4 @@ class PostsPoolViewController: UIViewController, UITextFieldDelegate, UITableVie
 
     }
 
-
 }
-

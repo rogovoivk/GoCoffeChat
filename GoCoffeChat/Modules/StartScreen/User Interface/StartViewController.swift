@@ -48,12 +48,12 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("Start App")
-        
+        view.backgroundColor = .white
         addSubviews()
         layoutViews()
         loadViewIfNeeded()
         
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
         
 
         
@@ -79,15 +79,15 @@ class StartViewController: UIViewController {
         super.viewDidAppear(animated)
 
         print("viewDidAppear started")
-        Auth.auth().addStateDidChangeListener{(auth, user) in
-            if user == nil {
-                self.ShowModalSignIn()
-            } else {
-                let vc = TBViewController()
-                vc.modalPresentationStyle = .fullScreen
-                self.present(vc, animated: true, completion: nil)
-            }
-        }
+//        Auth.auth().addStateDidChangeListener{(auth, user) in
+//            if user == nil {
+//                self.ShowModalSignIn()
+//            } else {
+//                let vc = TBViewController()
+//                vc.modalPresentationStyle = .fullScreen
+//                self.present(vc, animated: true, completion: nil)
+//            }
+//        }
         
         
     }

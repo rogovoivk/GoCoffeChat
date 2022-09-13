@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E66B48ED28B59E6200B68748 /* ProfileInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48EC28B59E6200B68748 /* ProfileInteractorProtocol.swift */; };
+		E66B48EF28B59E9B00B68748 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48EE28B59E9B00B68748 /* SignUpInteractor.swift */; };
+		E66B48F128B59EBF00B68748 /* SignUpInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48F028B59EBF00B68748 /* SignUpInteractorProtocol.swift */; };
+		E66B48F328B59ED900B68748 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48F228B59ED900B68748 /* SignInInteractor.swift */; };
+		E66B48F528B59EE500B68748 /* SignInInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48F428B59EE500B68748 /* SignInInteractorProtocol.swift */; };
+		E66B48F728B59F0000B68748 /* PoolPostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48F628B59F0000B68748 /* PoolPostsInteractor.swift */; };
+		E66B48F928B59F0C00B68748 /* PoolPostsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48F828B59F0C00B68748 /* PoolPostsInteractorProtocol.swift */; };
+		E66B48FD28B59F2D00B68748 /* PoolChatsInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48FC28B59F2D00B68748 /* PoolChatsInteractorProtocol.swift */; };
+		E66B48FF28B59F7B00B68748 /* PoolChatsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66B48FE28B59F7B00B68748 /* PoolChatsInteractor.swift */; };
 		E6707FD928ACE42E0000AD9A /* InDevelopingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */; };
 		E6738ED428A5550600E48634 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6738ED328A5550600E48634 /* PostCell.swift */; };
 		E679340228A54C6D006D1F87 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679340128A54C6D006D1F87 /* Post.swift */; };
+		E679FCC628BB228F0099A8FB /* TabBarViewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679FCC528BB228F0099A8FB /* TabBarViewWireframe.swift */; };
+		E679FCC828BB22A50099A8FB /* TabBarViewWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E679FCC728BB22A50099A8FB /* TabBarViewWireframeProtocol.swift */; };
 		E67ACB28289FE89D001F232F /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67ACB27289FE89D001F232F /* NewPostViewController.swift */; };
 		E67BA730288661C100582DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA72F288661C100582DEF /* AppDelegate.swift */; };
 		E67BA732288661C100582DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA731288661C100582DEF /* SceneDelegate.swift */; };
-		E67BA734288661C100582DEF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA733288661C100582DEF /* StartViewController.swift */; };
-		E67BA737288661C100582DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67BA735288661C100582DEF /* Main.storyboard */; };
 		E67BA73A288661C100582DEF /* GoCoffeChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E67BA738288661C100582DEF /* GoCoffeChat.xcdatamodeld */; };
 		E67BA73C288661C300582DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67BA73B288661C300582DEF /* Assets.xcassets */; };
 		E67BA73F288661C300582DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E67BA73D288661C300582DEF /* LaunchScreen.storyboard */; };
@@ -35,18 +44,49 @@
 		E67BA766288DAFB500582DEF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA765288DAFB500582DEF /* ChatViewController.swift */; };
 		E67BA768288DE48A00582DEF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA767288DE48A00582DEF /* Message.swift */; };
 		E67BA76B288DEB9400582DEF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67BA76A288DEB9400582DEF /* UserCell.swift */; };
+		E67C9A1428B748EE009EA5DC /* SignInViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1328B748EE009EA5DC /* SignInViewControllerProtocol.swift */; };
+		E67C9A1628B7491E009EA5DC /* SignUpViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1528B7491E009EA5DC /* SignUpViewControllerProtocol.swift */; };
+		E67C9A1828B74991009EA5DC /* ProfileViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1728B74991009EA5DC /* ProfileViewControllerProtocol.swift */; };
+		E67C9A1B28B7A410009EA5DC /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1A28B7A410009EA5DC /* RootWireframe.swift */; };
+		E67C9A1D28B7A47D009EA5DC /* SignInWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1C28B7A47D009EA5DC /* SignInWireframe.swift */; };
+		E67C9A1F28B7A4A2009EA5DC /* SignInWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A1E28B7A4A2009EA5DC /* SignInWireframeProtocol.swift */; };
+		E67C9A2B28B7A5B9009EA5DC /* SignUpWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A2A28B7A5B9009EA5DC /* SignUpWireframe.swift */; };
+		E67C9A2D28B7A5C7009EA5DC /* SignUpWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A2C28B7A5C7009EA5DC /* SignUpWireframeProtocol.swift */; };
+		E67C9A2F28B7A5E2009EA5DC /* ProfileWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A2E28B7A5E2009EA5DC /* ProfileWireframe.swift */; };
+		E67C9A3128B7A5F8009EA5DC /* ProfileWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A3028B7A5F8009EA5DC /* ProfileWireframeProtocol.swift */; };
+		E67C9A3328B7A617009EA5DC /* PoolPostsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A3228B7A617009EA5DC /* PoolPostsWireframe.swift */; };
+		E67C9A3528B7A626009EA5DC /* PoolPostsWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A3428B7A626009EA5DC /* PoolPostsWireframeProtocol.swift */; };
+		E67C9A3728B7A665009EA5DC /* PoolChatsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A3628B7A665009EA5DC /* PoolChatsWireframe.swift */; };
+		E67C9A3928B7A678009EA5DC /* PoolChatsWireframeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C9A3828B7A678009EA5DC /* PoolChatsWireframeProtocol.swift */; };
+		E68305F228CF2CB2006022C2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68305F128CF2CB2006022C2 /* ProfileView.swift */; };
+		E68305F428CF37CD006022C2 /* PoolPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68305F328CF37CD006022C2 /* PoolPostsView.swift */; };
+		E68305F628D08828006022C2 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68305F528D08828006022C2 /* NewPostView.swift */; };
+		E6DD5C7528B512F100741D27 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD5C7428B512F100741D27 /* ProfileInteractor.swift */; };
+		E6F6B02228C96FF70004E56A /* NewPostInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6B02128C96FF60004E56A /* NewPostInteractor.swift */; };
+		E6F6B02428C970040004E56A /* NewPostInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6B02328C970040004E56A /* NewPostInteractorProtocol.swift */; };
+		E6F6B02928C98D490004E56A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6B02828C98D490004E56A /* SignInView.swift */; };
+		E6F6B02B28C9B7280004E56A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F6B02A28C9B7280004E56A /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E66B48EC28B59E6200B68748 /* ProfileInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractorProtocol.swift; sourceTree = "<group>"; };
+		E66B48EE28B59E9B00B68748 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		E66B48F028B59EBF00B68748 /* SignUpInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractorProtocol.swift; sourceTree = "<group>"; };
+		E66B48F228B59ED900B68748 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		E66B48F428B59EE500B68748 /* SignInInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractorProtocol.swift; sourceTree = "<group>"; };
+		E66B48F628B59F0000B68748 /* PoolPostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolPostsInteractor.swift; sourceTree = "<group>"; };
+		E66B48F828B59F0C00B68748 /* PoolPostsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolPostsInteractorProtocol.swift; sourceTree = "<group>"; };
+		E66B48FC28B59F2D00B68748 /* PoolChatsInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolChatsInteractorProtocol.swift; sourceTree = "<group>"; };
+		E66B48FE28B59F7B00B68748 /* PoolChatsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolChatsInteractor.swift; sourceTree = "<group>"; };
 		E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InDevelopingScreenViewController.swift; sourceTree = "<group>"; };
 		E6738ED328A5550600E48634 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		E679340128A54C6D006D1F87 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E679FCC528BB228F0099A8FB /* TabBarViewWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewWireframe.swift; sourceTree = "<group>"; };
+		E679FCC728BB22A50099A8FB /* TabBarViewWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewWireframeProtocol.swift; sourceTree = "<group>"; };
 		E67ACB27289FE89D001F232F /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		E67BA72C288661C100582DEF /* GoCoffeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoCoffeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67BA72F288661C100582DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E67BA731288661C100582DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E67BA733288661C100582DEF /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		E67BA736288661C100582DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E67BA739288661C100582DEF /* GoCoffeChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoCoffeChat.xcdatamodel; sourceTree = "<group>"; };
 		E67BA73B288661C300582DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E67BA73E288661C300582DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +103,28 @@
 		E67BA765288DAFB500582DEF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		E67BA767288DE48A00582DEF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E67BA76A288DEB9400582DEF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E67C9A1328B748EE009EA5DC /* SignInViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerProtocol.swift; sourceTree = "<group>"; };
+		E67C9A1528B7491E009EA5DC /* SignUpViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerProtocol.swift; sourceTree = "<group>"; };
+		E67C9A1728B74991009EA5DC /* ProfileViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerProtocol.swift; sourceTree = "<group>"; };
+		E67C9A1A28B7A410009EA5DC /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		E67C9A1C28B7A47D009EA5DC /* SignInWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWireframe.swift; sourceTree = "<group>"; };
+		E67C9A1E28B7A4A2009EA5DC /* SignInWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWireframeProtocol.swift; sourceTree = "<group>"; };
+		E67C9A2A28B7A5B9009EA5DC /* SignUpWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWireframe.swift; sourceTree = "<group>"; };
+		E67C9A2C28B7A5C7009EA5DC /* SignUpWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWireframeProtocol.swift; sourceTree = "<group>"; };
+		E67C9A2E28B7A5E2009EA5DC /* ProfileWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframe.swift; sourceTree = "<group>"; };
+		E67C9A3028B7A5F8009EA5DC /* ProfileWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframeProtocol.swift; sourceTree = "<group>"; };
+		E67C9A3228B7A617009EA5DC /* PoolPostsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolPostsWireframe.swift; sourceTree = "<group>"; };
+		E67C9A3428B7A626009EA5DC /* PoolPostsWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolPostsWireframeProtocol.swift; sourceTree = "<group>"; };
+		E67C9A3628B7A665009EA5DC /* PoolChatsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolChatsWireframe.swift; sourceTree = "<group>"; };
+		E67C9A3828B7A678009EA5DC /* PoolChatsWireframeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolChatsWireframeProtocol.swift; sourceTree = "<group>"; };
+		E68305F128CF2CB2006022C2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E68305F328CF37CD006022C2 /* PoolPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolPostsView.swift; sourceTree = "<group>"; };
+		E68305F528D08828006022C2 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		E6DD5C7428B512F100741D27 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		E6F6B02128C96FF60004E56A /* NewPostInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostInteractor.swift; sourceTree = "<group>"; };
+		E6F6B02328C970040004E56A /* NewPostInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostInteractorProtocol.swift; sourceTree = "<group>"; };
+		E6F6B02828C98D490004E56A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E6F6B02A28C9B7280004E56A /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +143,238 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E67ACB29289FE8AE001F232F /* Pool Posts */ = {
+		E6000F7928C89E65000ED545 /* Home Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA758288A352500582DEF /* TBViewController.swift */,
+				E679FCC428BB226E0099A8FB /* Routing */,
+			);
+			path = "Home Tab Bar";
+			sourceTree = "<group>";
+		};
+		E6000F7A28C8C4B5000ED545 /* New Post */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6B01E28C96F870004E56A /* User Interface */,
+				E6F6B02028C96FA30004E56A /* Business Logic */,
+			);
+			path = "New Post";
+			sourceTree = "<group>";
+		};
+		E675204428B38C070047660F /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				E675205828B39AF60047660F /* User Interface */,
+				E675205728B39AF40047660F /* Routing */,
+				E675205628B39AF20047660F /* Business Logic */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		E675204528B38C330047660F /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E675205528B39AD90047660F /* User Interface */,
+				E675205428B39AD70047660F /* Routing */,
+				E675205328B39AD50047660F /* Business Logic */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E675204728B38C780047660F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E675205228B39ABC0047660F /* User Interface */,
+				E675205128B39AB90047660F /* Routing */,
+				E675205028B39AB70047660F /* Business Logic */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E675204828B38C850047660F /* Pool Posts */ = {
+			isa = PBXGroup;
+			children = (
+				E675204C28B396280047660F /* User Interface */,
+				E675204B28B396170047660F /* Routing */,
+				E675204A28B395F90047660F /* Business Logic */,
+			);
+			path = "Pool Posts";
+			sourceTree = "<group>";
+		};
+		E675204928B38C900047660F /* Pool Chats */ = {
+			isa = PBXGroup;
+			children = (
+				E675204D28B39A8F0047660F /* User Interface */,
+				E675204E28B39A990047660F /* Routing */,
+				E675204F28B39AA20047660F /* Business Logic */,
+			);
+			path = "Pool Chats";
+			sourceTree = "<group>";
+		};
+		E675204A28B395F90047660F /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E66B48F628B59F0000B68748 /* PoolPostsInteractor.swift */,
+				E66B48F828B59F0C00B68748 /* PoolPostsInteractorProtocol.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E675204B28B396170047660F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A3228B7A617009EA5DC /* PoolPostsWireframe.swift */,
+				E67C9A3428B7A626009EA5DC /* PoolPostsWireframeProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		E675204C28B396280047660F /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
 				E67BA75B288AAB9D00582DEF /* PostsPoolViewController.swift */,
-				E67ACB27289FE89D001F232F /* NewPostViewController.swift */,
 				E6738ED328A5550600E48634 /* PostCell.swift */,
+				E68305F328CF37CD006022C2 /* PoolPostsView.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E675204D28B39A8F0047660F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA75F288D511600582DEF /* PoolChatsViewController.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E675204E28B39A990047660F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A3628B7A665009EA5DC /* PoolChatsWireframe.swift */,
+				E67C9A3828B7A678009EA5DC /* PoolChatsWireframeProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		E675204F28B39AA20047660F /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E66B48FC28B59F2D00B68748 /* PoolChatsInteractorProtocol.swift */,
+				E66B48FE28B59F7B00B68748 /* PoolChatsInteractor.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E675205028B39AB70047660F /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E6DD5C7428B512F100741D27 /* ProfileInteractor.swift */,
+				E66B48EC28B59E6200B68748 /* ProfileInteractorProtocol.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E675205128B39AB90047660F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A2E28B7A5E2009EA5DC /* ProfileWireframe.swift */,
+				E67C9A3028B7A5F8009EA5DC /* ProfileWireframeProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		E675205228B39ABC0047660F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA75D288D058900582DEF /* ProfileViewController.swift */,
+				E67C9A1728B74991009EA5DC /* ProfileViewControllerProtocol.swift */,
+				E68305F128CF2CB2006022C2 /* ProfileView.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E675205328B39AD50047660F /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E66B48EE28B59E9B00B68748 /* SignUpInteractor.swift */,
+				E66B48F028B59EBF00B68748 /* SignUpInteractorProtocol.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E675205428B39AD70047660F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A2A28B7A5B9009EA5DC /* SignUpWireframe.swift */,
+				E67C9A2C28B7A5C7009EA5DC /* SignUpWireframeProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		E675205528B39AD90047660F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA7472886A5B000582DEF /* SignUpViewController.swift */,
+				E67C9A1528B7491E009EA5DC /* SignUpViewControllerProtocol.swift */,
+				E6F6B02A28C9B7280004E56A /* SignUpView.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E675205628B39AF20047660F /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E66B48F228B59ED900B68748 /* SignInInteractor.swift */,
+				E66B48F428B59EE500B68748 /* SignInInteractorProtocol.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		E675205728B39AF40047660F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E67C9A1C28B7A47D009EA5DC /* SignInWireframe.swift */,
+				E67C9A1E28B7A4A2009EA5DC /* SignInWireframeProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		E675205828B39AF60047660F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E67BA7492887904000582DEF /* SignInViewController.swift */,
+				E67C9A1328B748EE009EA5DC /* SignInViewControllerProtocol.swift */,
+				E6F6B02828C98D490004E56A /* SignInView.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E67985EC28B32B6700C2F508 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E6000F7928C89E65000ED545 /* Home Tab Bar */,
+				E6000F7A28C8C4B5000ED545 /* New Post */,
+				E675204928B38C900047660F /* Pool Chats */,
+				E675204828B38C850047660F /* Pool Posts */,
+				E675204728B38C780047660F /* Profile */,
+				E675204528B38C330047660F /* SignUp */,
+				E675204428B38C070047660F /* SignIn */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E679FCC428BB226E0099A8FB /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				E679FCC528BB228F0099A8FB /* TabBarViewWireframe.swift */,
+				E679FCC728BB22A50099A8FB /* TabBarViewWireframeProtocol.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		E67ACB29289FE8AE001F232F /* Pool Posts */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = "Pool Posts";
 			sourceTree = "<group>";
@@ -110,11 +398,13 @@
 		E67BA72E288661C100582DEF /* GoCoffeChat */ = {
 			isa = PBXGroup;
 			children = (
+				E67BA76C288DEBDF00582DEF /* Entities */,
+				E67985EC28B32B6700C2F508 /* Modules */,
+				E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */,
 				E67BA75A288AAB6200582DEF /* MainScreens */,
-				E67BA7462886A53100582DEF /* AuthorizationScreens */,
 				E67BA72F288661C100582DEF /* AppDelegate.swift */,
+				E67C9A1A28B7A410009EA5DC /* RootWireframe.swift */,
 				E67BA731288661C100582DEF /* SceneDelegate.swift */,
-				E67BA735288661C100582DEF /* Main.storyboard */,
 				E67BA73B288661C300582DEF /* Assets.xcassets */,
 				E67BA73D288661C300582DEF /* LaunchScreen.storyboard */,
 				E67BA740288661C300582DEF /* Info.plist */,
@@ -124,25 +414,11 @@
 			path = GoCoffeChat;
 			sourceTree = "<group>";
 		};
-		E67BA7462886A53100582DEF /* AuthorizationScreens */ = {
-			isa = PBXGroup;
-			children = (
-				E67BA7472886A5B000582DEF /* SignUpViewController.swift */,
-				E67BA7492887904000582DEF /* SignInViewController.swift */,
-				E67BA733288661C100582DEF /* StartViewController.swift */,
-			);
-			path = AuthorizationScreens;
-			sourceTree = "<group>";
-		};
 		E67BA75A288AAB6200582DEF /* MainScreens */ = {
 			isa = PBXGroup;
 			children = (
 				E67ACB29289FE8AE001F232F /* Pool Posts */,
-				E67BA76C288DEBDF00582DEF /* Model */,
 				E67BA769288DEB7300582DEF /* Pool Chats */,
-				E67BA758288A352500582DEF /* TBViewController.swift */,
-				E67BA75D288D058900582DEF /* ProfileViewController.swift */,
-				E6707FD828ACE42E0000AD9A /* InDevelopingScreenViewController.swift */,
 			);
 			path = MainScreens;
 			sourceTree = "<group>";
@@ -151,21 +427,38 @@
 			isa = PBXGroup;
 			children = (
 				E67BA761288D77AF00582DEF /* NewChatViewController.swift */,
-				E67BA75F288D511600582DEF /* PoolChatsViewController.swift */,
 				E67BA76A288DEB9400582DEF /* UserCell.swift */,
 				E67BA765288DAFB500582DEF /* ChatViewController.swift */,
 			);
 			path = "Pool Chats";
 			sourceTree = "<group>";
 		};
-		E67BA76C288DEBDF00582DEF /* Model */ = {
+		E67BA76C288DEBDF00582DEF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				E67BA767288DE48A00582DEF /* Message.swift */,
 				E67BA763288D8EA400582DEF /* User.swift */,
 				E679340128A54C6D006D1F87 /* Post.swift */,
 			);
-			path = Model;
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E6F6B01E28C96F870004E56A /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E67ACB27289FE89D001F232F /* NewPostViewController.swift */,
+				E68305F528D08828006022C2 /* NewPostView.swift */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E6F6B02028C96FA30004E56A /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E6F6B02128C96FF60004E56A /* NewPostInteractor.swift */,
+				E6F6B02328C970040004E56A /* NewPostInteractorProtocol.swift */,
+			);
+			path = "Business Logic";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +532,6 @@
 				E67BA73F288661C300582DEF /* LaunchScreen.storyboard in Resources */,
 				E67BA74C2887AFD100582DEF /* GoogleService-Info.plist in Resources */,
 				E67BA73C288661C300582DEF /* Assets.xcassets in Resources */,
-				E67BA737288661C100582DEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,39 +542,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68305F428CF37CD006022C2 /* PoolPostsView.swift in Sources */,
+				E67C9A1828B74991009EA5DC /* ProfileViewControllerProtocol.swift in Sources */,
+				E6F6B02928C98D490004E56A /* SignInView.swift in Sources */,
 				E67BA759288A352500582DEF /* TBViewController.swift in Sources */,
-				E67BA734288661C100582DEF /* StartViewController.swift in Sources */,
+				E66B48F728B59F0000B68748 /* PoolPostsInteractor.swift in Sources */,
+				E6DD5C7528B512F100741D27 /* ProfileInteractor.swift in Sources */,
+				E67C9A1F28B7A4A2009EA5DC /* SignInWireframeProtocol.swift in Sources */,
+				E67C9A1428B748EE009EA5DC /* SignInViewControllerProtocol.swift in Sources */,
 				E67BA75C288AAB9D00582DEF /* PostsPoolViewController.swift in Sources */,
 				E67BA73A288661C100582DEF /* GoCoffeChat.xcdatamodeld in Sources */,
 				E679340228A54C6D006D1F87 /* Post.swift in Sources */,
 				E6738ED428A5550600E48634 /* PostCell.swift in Sources */,
+				E66B48ED28B59E6200B68748 /* ProfileInteractorProtocol.swift in Sources */,
+				E66B48FF28B59F7B00B68748 /* PoolChatsInteractor.swift in Sources */,
+				E67C9A1D28B7A47D009EA5DC /* SignInWireframe.swift in Sources */,
 				E6707FD928ACE42E0000AD9A /* InDevelopingScreenViewController.swift in Sources */,
+				E66B48EF28B59E9B00B68748 /* SignUpInteractor.swift in Sources */,
 				E67BA74A2887904000582DEF /* SignInViewController.swift in Sources */,
+				E66B48F528B59EE500B68748 /* SignInInteractorProtocol.swift in Sources */,
+				E66B48FD28B59F2D00B68748 /* PoolChatsInteractorProtocol.swift in Sources */,
+				E67C9A3928B7A678009EA5DC /* PoolChatsWireframeProtocol.swift in Sources */,
+				E67C9A1B28B7A410009EA5DC /* RootWireframe.swift in Sources */,
 				E67ACB28289FE89D001F232F /* NewPostViewController.swift in Sources */,
+				E66B48F128B59EBF00B68748 /* SignUpInteractorProtocol.swift in Sources */,
+				E679FCC628BB228F0099A8FB /* TabBarViewWireframe.swift in Sources */,
+				E67C9A3328B7A617009EA5DC /* PoolPostsWireframe.swift in Sources */,
 				E67BA730288661C100582DEF /* AppDelegate.swift in Sources */,
+				E68305F228CF2CB2006022C2 /* ProfileView.swift in Sources */,
 				E67BA732288661C100582DEF /* SceneDelegate.swift in Sources */,
 				E67BA762288D77AF00582DEF /* NewChatViewController.swift in Sources */,
+				E68305F628D08828006022C2 /* NewPostView.swift in Sources */,
+				E6F6B02B28C9B7280004E56A /* SignUpView.swift in Sources */,
+				E67C9A2F28B7A5E2009EA5DC /* ProfileWireframe.swift in Sources */,
+				E67C9A1628B7491E009EA5DC /* SignUpViewControllerProtocol.swift in Sources */,
+				E67C9A3128B7A5F8009EA5DC /* ProfileWireframeProtocol.swift in Sources */,
+				E66B48F928B59F0C00B68748 /* PoolPostsInteractorProtocol.swift in Sources */,
 				E67BA764288D8EA400582DEF /* User.swift in Sources */,
+				E67C9A2B28B7A5B9009EA5DC /* SignUpWireframe.swift in Sources */,
 				E67BA76B288DEB9400582DEF /* UserCell.swift in Sources */,
 				E67BA766288DAFB500582DEF /* ChatViewController.swift in Sources */,
+				E6F6B02428C970040004E56A /* NewPostInteractorProtocol.swift in Sources */,
 				E67BA7482886A5B000582DEF /* SignUpViewController.swift in Sources */,
+				E67C9A2D28B7A5C7009EA5DC /* SignUpWireframeProtocol.swift in Sources */,
+				E66B48F328B59ED900B68748 /* SignInInteractor.swift in Sources */,
 				E67BA760288D511600582DEF /* PoolChatsViewController.swift in Sources */,
+				E67C9A3528B7A626009EA5DC /* PoolPostsWireframeProtocol.swift in Sources */,
+				E6F6B02228C96FF70004E56A /* NewPostInteractor.swift in Sources */,
+				E679FCC828BB22A50099A8FB /* TabBarViewWireframeProtocol.swift in Sources */,
 				E67BA75E288D058900582DEF /* ProfileViewController.swift in Sources */,
 				E67BA768288DE48A00582DEF /* Message.swift in Sources */,
+				E67C9A3728B7A665009EA5DC /* PoolChatsWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E67BA735288661C100582DEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E67BA736288661C100582DEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E67BA73D288661C300582DEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,7 +738,8 @@
 				INFOPLIST_FILE = GoCoffeChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -450,7 +767,8 @@
 				INFOPLIST_FILE = GoCoffeChat/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,15 +1,16 @@
 //
-//  SignUpViewController.swift
+//  SignUpView.swift
 //  GoCoffeChat
 //
-//  Created by Vladoslav on 19.07.2022.
+//  Created by Vladoslav on 08.09.2022.
 //
 
 import UIKit
-import Firebase
 
-class SignUpViewController: UIViewController {
+class SignUpView: UIView {
     
+    var screenView: UIView?
+    var signUpViewController: SignUpViewController?
     
     private let screenContentHeigh = 600
     private var scrollView = UIScrollView()
@@ -18,11 +19,11 @@ class SignUpViewController: UIViewController {
 //    @IBOutlet weak var scrollView: UIScrollView!
     private var bgImage = UIImageView(image: UIImage(named: "backScreen"))
     
-    private var emailTextField = UITextField()
-    private var nikenameTextField = UITextField()
-    private var passwordTextField = UITextField()
-    private var secondPasswordTextField = UITextField()
-    private var genderTextView = UITextField()
+    public var emailTextField = UITextField()
+    public var nikenameTextField = UITextField()
+    public var passwordTextField = UITextField()
+    public var secondPasswordTextField = UITextField()
+    public var genderTextView = UITextField()
     
     private let sighUpLablel: UILabel = {
         let myLabel = UILabel()
@@ -38,7 +39,7 @@ class SignUpViewController: UIViewController {
     }()
     
     let genderItems = ["man", "women"]
-    private let genderSC: UISegmentedControl = {
+    public let genderSC: UISegmentedControl = {
         let genderItems = ["man", "women"]
         let genderSC = UISegmentedControl(items : genderItems)
         genderSC.selectedSegmentIndex = 0
@@ -63,51 +64,9 @@ class SignUpViewController: UIViewController {
     }()
     
     @objc func pressedButton() {
-        print("pressed button GO")
-        
-        let email = emailTextField.text!
-        let nickname = nikenameTextField.text!
-        let password1 = passwordTextField.text!
-        let password2 = secondPasswordTextField.text!
-        let gender = genderItems[genderSC.selectedSegmentIndex]
-        
-        if (!email.isEmpty && !nickname.isEmpty && !password1.isEmpty && !password2.isEmpty && (password1 == password2)){
-            Auth.auth().createUser(withEmail: email, password: password1) { result, error in
-                if error == nil{
-                    if let result = result{
-                        print("тут результат (id зарегестрированного пользователья)")
-                        print(result.user.uid)
-                        let ref = Database.database().reference().child("users")
-                        ref.child(result.user.uid).updateChildValues(["email": email, "nickname": nickname, "gender": gender])
-                        
-//                        let vc = StartViewController()
-//                        vc.modalPresentationStyle = .fullScreen
-//                        self.present(vc, animated: true, completion: nil)
-                        self.dismiss(animated: true)
-                    }
-                }
-                else {
-                    let alert = UIAlertController(title: "Ошибка", message: error?.localizedDescription, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-            }
-        } else {
-            showAllert()
+        signUpViewController?.pressedButton()
+    }
 
-        }
-        print("Вроде работает")
-        
-//        let vc = storyboard?.instantiateViewController(withIdentifier: "MenuTabBarID")
-//        vc!.modalPresentationStyle = .fullScreen
-//        self.present(vc!, animated: true, completion: nil)
-    }
-    
-    func showAllert(){
-        let alert = UIAlertController(title: "Ошибка", message: "Заполните все поля", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Окей", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
     
     private let myLabel: UILabel = {
         let myLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 21))
@@ -124,26 +83,25 @@ class SignUpViewController: UIViewController {
     }()
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        title = "Регистрация"
+    func setView() {
+
         addSubviews()
         layoutViews()
     }
     
     func addSubviews() {
         bgImage.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bgImage)
+        screenView!.addSubview(bgImage)
         let bgBlur = UIBlurEffect(style: UIBlurEffect.Style.systemMaterialDark)
         let blurEffectView = UIVisualEffectView(effect: bgBlur)
-        blurEffectView.frame = view.bounds
+        blurEffectView.frame = screenView!.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
 //        blurEffectView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(blurEffectView)
-        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
-        view.addSubview(scrollView)
+        screenView!.addSubview(blurEffectView)
+        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: screenView!.frame.size.width, height: screenView!.frame.size.height))
+        screenView!.addSubview(scrollView)
         
-        myView = UIView(frame: CGRect(x: 0, y: 0, width: Int(view.frame.size.width), height: screenContentHeigh))
+        myView = UIView(frame: CGRect(x: 0, y: 0, width: Int(screenView!.frame.size.width), height: screenContentHeigh))
         
         scrollView.addSubview(myView)
         
@@ -178,16 +136,16 @@ class SignUpViewController: UIViewController {
         myView.addSubview(goButton)
         myView.addSubview(myLabel)
         
-        scrollView.contentSize = CGSize(width: Int(view.frame.size.width), height: screenContentHeigh)
+        scrollView.contentSize = CGSize(width: Int(screenView!.frame.size.width), height: screenContentHeigh)
     }
     
     func layoutViews() {
         
         NSLayoutConstraint.activate([
-            bgImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            bgImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            bgImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            bgImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0),
+            bgImage.topAnchor.constraint(equalTo: screenView!.topAnchor, constant: 0),
+            bgImage.leadingAnchor.constraint(equalTo: screenView!.leadingAnchor, constant: 0),
+            bgImage.trailingAnchor.constraint(equalTo: screenView!.trailingAnchor, constant: 0),
+            bgImage.bottomAnchor.constraint(equalTo: screenView!.bottomAnchor, constant: 0),
                         
             sighUpLablel.topAnchor.constraint(equalTo: myView.topAnchor, constant: 125),
             sighUpLablel.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 16),
@@ -225,7 +183,7 @@ class SignUpViewController: UIViewController {
 //            goButton.trailingAnchor.constraint(equalTo: myView.trailingAnchor, constant: -32),
             goButton.widthAnchor.constraint(equalToConstant: 311),
             goButton.heightAnchor.constraint(equalToConstant: 50),
-            goButton.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            goButton.centerXAnchor.constraint(equalTo: screenView!.centerXAnchor, constant: 0),
 
             myLabel.topAnchor.constraint(equalTo: goButton.layoutMarginsGuide.bottomAnchor, constant: 24),
             myLabel.leadingAnchor.constraint(equalTo: myView.leadingAnchor, constant: 16),
@@ -251,7 +209,4 @@ class SignUpViewController: UIViewController {
         return myTextField
     }
 
- 
-
 }
-
